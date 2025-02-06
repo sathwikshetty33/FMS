@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background: url(logo-21.png)
+    no-repeat center center fixed;
+    background-size:20%;
+    
+    
+}
+
+
+
+
+header {
+    height:60px;
+    background-color: #3d341f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.college-logo{
+    background: url("logo-21.png");
+}
+
+header h1{
+    margin-left: 20px;
+    font-family: jaro;
+}
+.admin-container{
+    position: absolute;
+    top:10px;
+    right:20px;
+    text-align: center;
+}
+.logo{
+    margin-top: 20px;
+    width:40px;
+    height:40px;
+    display:block;
+    margin:0 auto 5px auto;
+}
+
+/* Admin Login */
+.admin-login {
+   text-align: center;
+    font-size: 14px;
+    
+    color:  #f8f8f8;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #000000;
+    
+}
+
+.about h2, .about h3 {
+    color: #3d341f;
+}
+.about h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* Active Forms Section */
+.active-forms {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.active-forms h2 {
+    color: #3d341f;
+}
+
+/* Forms Container */
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Form Box */
+.form-box {
+    
+    width: 30%;
+    height: 150px;
+    background: rgb(193, 161, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    
+    header {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    
+    .admin-container {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    
+    .form-box {
+        width: 100%;
+        padding: 15px;
+    }
+   
+}
+@media (max-width: 768px) {
+    
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    
+    .admin-container {
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    
+    .admin-login {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+   
+    .about, .active-forms {
+        padding: 10px;
+    }
+
+    
+    .forms-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+
+    
+    .form-box {
+        width: 80%;
+        
+        padding: 20px;
+    }
+}
