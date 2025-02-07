@@ -19,7 +19,8 @@ const formSchema = new mongoose.Schema({
   status: {
     type: Boolean,
   },
-  questions: [{ type: mongoose.Schema.Types.ObjectId, ref: "Question" }],
+  // questions: [{ type: mongoose.Schema.Types.ObjectId, ref: "Question" }],
+  questions: {},
   createdAt: { type: Date, default: Date.now }
 });
 
