@@ -18,7 +18,8 @@ const FMSSchema = new mongoose.Schema({
     },
     status: {
         type: Boolean,
-    }
+        default: true,
+    },
 }, {
     timestamps: true,
 });
@@ -28,3 +29,5 @@ const forms = mongoose.model("formData", FMSSchema);
 module.exports = {
     forms,
 }
+
+
